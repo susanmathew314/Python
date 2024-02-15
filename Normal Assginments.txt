@@ -1,0 +1,133 @@
+Basic Calculator: Write a Python program that takes two numbers from the user and performs addition, subtraction, multiplication, and division operations on them.
+python
+Copy code
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+addition = num1 + num2
+subtraction = num1 - num2
+multiplication = num1 * num2
+division = num1 / num2
+
+print("Addition:", addition)
+print("Subtraction:", subtraction)
+print("Multiplication:", multiplication)
+print("Division:", division)
+Check for Even or Odd: Write a Python program to check if a number entered by the user is even or odd.
+python
+Copy code
+num = int(input("Enter a number: "))
+
+if num % 2 == 0:
+    print(num, "is even.")
+else:
+    print(num, "is odd.")
+Palindrome Checker: Write a Python program to check if a string entered by the user is a palindrome or not.
+python
+Copy code
+string = input("Enter a string: ")
+
+if string == string[::-1]:
+    print("Palindrome!")
+else:
+    print("Not a palindrome.")
+Prime Number Checker: Write a Python program to check if a number entered by the user is a prime number or not.
+python
+Copy code
+num = int(input("Enter a number: "))
+
+if num > 1:
+    for i in range(2, num):
+        if num % i == 0:
+            print(num, "is not a prime number.")
+            break
+    else:
+        print(num, "is a prime number.")
+else:
+    print(num, "is not a prime number.")
+Factorial Calculator: Write a Python program to calculate the factorial of a number entered by the user.
+python
+Copy code
+num = int(input("Enter a number: "))
+factorial = 1
+
+if num < 0:
+    print("Factorial does not exist for negative numbers.")
+elif num == 0:
+    print("Factorial of 0 is 1.")
+else:
+    for i in range(1, num + 1):
+        factorial *= i
+    print("Factorial of", num, "is", factorial)
+Temperature Converter: Write a Python program to convert temperatures between Celsius and Fahrenheit.
+python
+Copy code
+def celsius_to_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+def fahrenheit_to_celsius(fahrenheit):
+    return (fahrenheit - 32) * 5/9
+
+choice = input("Enter 'C' to convert Celsius to Fahrenheit or 'F' to convert Fahrenheit to Celsius: ")
+
+if choice.upper() == 'C':
+    celsius = float(input("Enter temperature in Celsius: "))
+    print("Temperature in Fahrenheit:", celsius_to_fahrenheit(celsius))
+elif choice.upper() == 'F':
+    fahrenheit = float(input("Enter temperature in Fahrenheit: "))
+    print("Temperature in Celsius:", fahrenheit_to_celsius(fahrenheit))
+else:
+    print("Invalid choice.")
+List Manipulation: Write a Python program that performs various operations on a list (e.g., sorting, finding the maximum or minimum value, calculating the sum).
+python
+Copy code
+numbers = [5, 2, 8, 10, 3]
+
+# Sorting the list
+sorted_numbers = sorted(numbers)
+print("Sorted List:", sorted_numbers)
+
+# Finding the maximum and minimum values
+max_value = max(numbers)
+min_value = min(numbers)
+print("Maximum Value:", max_value)
+print("Minimum Value:", min_value)
+
+# Calculating the sum
+sum_of_numbers = sum(numbers)
+print("Sum of Numbers:", sum_of_numbers)
+Simple Interest Calculator: Write a Python program to calculate the simple interest based on principal amount, rate, and time.
+python
+Copy code
+def calculate_simple_interest(principal, rate, time):
+    return (principal * rate * time) / 100
+
+principal = float(input("Enter principal amount: "))
+rate = float(input("Enter rate of interest: "))
+time = float(input("Enter time (in years): "))
+
+interest = calculate_simple_interest(principal, rate, time)
+print("Simple Interest:", interest)
+Reverse a String: Write a Python program that reverses a string entered by the user.
+python
+Copy code
+string = input("Enter a string: ")
+reversed_string = string[::-1]
+print("Reversed String:", reversed_string)
+Pattern Printing: Write a Python program to print the following pattern:
+markdown
+Copy code
+*
+* *
+* * *
+* * * *
+* * * * *
+python
+Copy code
+rows = 5
+
+for i in range(1, rows + 1):
+    for j in range(1, i + 1):
+        print("*", end=" ")
+    print()
+These assignments cover various concepts in Python programming and provide practice for beginners.
